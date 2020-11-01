@@ -1,8 +1,11 @@
 import React from 'react';
+import HomeMenu from '../components/HomeMenu';
 
 function Home() {
     return(
-        <div>Home</div>
+        <div>
+            <HomeMenu />
+        </div>
     )
 }
 
