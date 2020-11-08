@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "NanumBarunGothic-regular";
+    font-weight: bold;
+    src: url("../../asset/fonts/NanumBarunGothic.ttf") format("truetype");
+}
+
+.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
 .menu {
     position: relative;
     height: 80px;
@@ -7,7 +15,7 @@
 
 .inner{
     max-width: 1300px;
-    min-width: 800px;
+    min-width: 1300px;
     height: 80px;
     margin: 0 auto;
     padding: 0 24px 0 24px;
@@ -44,15 +52,50 @@
 }
 
 .gnbList > li {
+    font-family: "NanumBarunGothic-regular";
     float: left;
     font-size: 20px;
     height: 100%;
-    padding: 30px 60px 0 0;
+    padding: 30px 60px 30px 0;
     line-height: 1;
 }
 
 .hotSale {
     font-size: 30px !important;
-    padding: 24px 60px 0 0 !important; 
+    padding: 25px 60px 25px 0 !important; 
     color: crimson;
+}
+
+.spotInner {
+    position: absolute;
+    top: 80px;
+    padding: 0px 0px 0px 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12);
+    text-align: left;
+    display: none;
+}
+
+.spotInner > li {
+    padding: 30px 0 30px 5px;
+    font-size: 16px;
+}
+
+.Inner01 {
+    width: 200px;
+}
+
+.Inner02 {
+    width: 130px;
+}
+
+.menuList:hover .spotInner {
+    display: block;
+}
+
+.spotInner:hover {
+    display: block;
+}
+
+.spotInner:hover > li:hover{
+    color: gray;
 }
